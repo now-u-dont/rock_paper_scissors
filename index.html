@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+
+    <style>
+      body {
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-size: 90%;
+      }
+      h2 {
+        font-family: 'Courier New', Courier, monospace;
+        color:brown;
+      }
+      button {
+        background-color: rgb(0, 72, 255);
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 5px;
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      .game-board {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .game-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-board">
+      <h2>Computer Choice:<span id ="computer-choice"></span></h2>
+      <h2>User Choice: <span id ="user-choice"></span></h2>
+      <h2>Result:<span id ="result"></span></h2>
+    </div>
+
+    <div class="game-buttons">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+
+
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
